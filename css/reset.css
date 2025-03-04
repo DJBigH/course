@@ -13,7 +13,7 @@
     --column-padding: 15px;
     --primary-color: #d39d5d; /*Màu chủ đạo*/
     --primary-color-hover: #693a00; /*Màu chủ đạo*/
-    --text-color: #fcfbf2; /*Màu chữ*/
+    --text-color: black; /*Màu chữ*/
     --heading-color: #121212; /*Màu các thẻ heading (h1, h2, h3)*/
     --link-color: #000; /*Màu liên kết*/
     --primary-color-opacity: #253993b8;
