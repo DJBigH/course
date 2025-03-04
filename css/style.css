@@ -1,14 +1,20 @@
-.container{
+.container {
   padding: 10px 0;
 }
 
 /* ----------Header------------ */
-.header__logo{
-  width: 100%;
-  height: auto;
+
+header {
+  background-color: #fff;
 }
 
-.header__input{
+.header__logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.header__input {
   width: 95%;
   border-radius: 20px;
   background: #f5f5f5;
@@ -16,29 +22,29 @@
   margin-left: 15px;
 }
 
-.header__hotel{
+.header__hotel {
   margin-left: 30px;
 }
 
-.header__hotel span{
+.header__hotel span {
   color: red;
 }
 
-.header__hotel span:last-child{
+.header__hotel span:last-child {
   margin-left: 20px;
 }
 
-.header__cart{
+.header__cart {
   border-left: 1px solid #ddd;
   text-align: center;
   border-right: 1px solid #ddd;
 }
 
-.header__cart i{
+.header__cart i {
   color: black;
 }
 
-.header__button .button__login{
+.header__button .button__login {
   width: 120px;
   border-radius: 40px;
   padding: 5px 0;
@@ -48,7 +54,7 @@
   font-weight: bold;
 }
 
-.header__button .button__register{
+.header__button .button__register {
   width: 120px;
   border-radius: 40px;
   padding: 5px 0;
@@ -58,29 +64,343 @@
   border-color: #0064a5;
 }
 
-.line{
+.line {
   border: 1px solid #e5e5e5;
   width: 100%;
 }
 
 /* ------------Menu---------------- */
-.primary-menu ul{
+nav {
+  background-color: #fff;
+}
+
+
+
+.primary-menu ul {
   /* display: flex;
   justify-content: space-between; */
   padding: 0;
   font-size: 0;
 }
 
-.primary-menu ul li{
+.primary-menu ul li {
   display: inline-block;
   list-style: none;
   padding: 0px 15px;
   font-size: 14px;
 }
 
-.primary-menu ul li a{
+.primary-menu ul li a {
   color: black;
   text-decoration: none;
 }
 
+/* ------------Main-banner---------------- */
 
+
+/* ------------box-banner---------------- */
+
+.box-banner .box-banner-item .col-lg-3 {
+  position: relative;
+}
+
+.box-banner .box-banner-item .banner-text {
+  position: absolute;
+  top: 43%;
+  bottom: 0;
+  left: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* ------------box-step---------------- */
+
+.box-step h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: black;
+}
+
+.box-step .button-step .btn-left a {
+  color: #fff;
+}
+
+.box-step .button-step .btn-right a {
+  color: #fff;
+}
+
+.box-step .button-step .btn-right button {
+  background-color: #ec1d25;
+}
+
+.box-step .container {
+  background-color: #fff;
+}
+
+.box-step .box-step-item p {
+  color: rgb(6, 115, 186);
+  font-weight: 700;
+  line-height: 21px;
+}
+
+/* ------------box-tranning---------------- */
+
+.box-tranning .box-tranning-top .category-list {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.box-tranning .box-tranning-top .category-list li {
+  background-color: #fff;
+  border: 0.8px solid #ddd;
+  border-radius: 5px;
+  color: #333;
+  padding: 5px 15px;
+  text-align: center;
+  display: inline-block;
+  /* Giúp chữ căn giữa */
+  white-space: nowrap;
+  /* Không xuống dòng */
+}
+
+.box-tranning .box-tranning-top .category-list>li>a {
+  color: rgb(51, 51, 51);
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.box-tranning .box-tranning-top .category-list li:hover {
+  background: #e9ffdf;
+}
+
+.box-tranning .box-tranning-top .category-list li:hover>a {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+  line-height: 21px;
+}
+
+.box-tranning .box-tranning-middle img {
+  border-radius: 5px;
+}
+
+.box-tranning .box-tranning-middle .box-right .box-tranning-content .author img,
+.box-tranning .box-tranning-middle .banner-under .item-content .author img {
+  width: 48px;
+  height: 48px;
+  max-width: 100%;
+  /* Giúp ảnh không bị vỡ trên màn hình nhỏ */
+  object-fit: cover;
+  /* Cắt ảnh để luôn giữ đúng tỷ lệ */
+  border-radius: 100%;
+}
+
+.box-tranning .box-tranning-middle .box-right .box-tranning-content .author p,
+.box-tranning .box-tranning-middle .banner-under .item-content .author p {
+  color: rgba(103, 100, 100, 0.7);
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.box-tranning .box-tranning-middle .box-right .box-tranning-content .author,
+.box-tranning .box-tranning-middle .banner-under .item-content .author {
+  padding: 10px 0;
+}
+
+.box-tranning .box-tranning-middle .box-right p,
+.box-tranning .box-tranning-middle .banner-under .item-content {
+  color: rgb(51, 51, 51);
+  font-weight: 600;
+}
+
+.box-tranning .box-tranning-middle .box-right .box-tranning-content .about-price,
+.box-tranning .box-tranning-middle .banner-under .item-content .about-price {
+  color: rgb(102, 102, 102);
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.box-tranning .box-tranning-middle .box-right .box-tranning-content,
+.box-tranning .box-tranning-middle .banner-under .item-content {
+  background: #fff;
+}
+
+.box-tranning .box-tranning-middle .col-lg-6 {
+  position: relative;
+  transition: transform 1s ease-in-out;
+}
+
+.box-tranning .box-tranning-middle .col-lg-6 .box-tranning-item {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 650px;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2f0606;
+  background: rgba(47, 6, 6, 0.6);
+  /* Chỉ làm mờ nền */
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.box-tranning .box-tranning-middle .col-lg-6 .box-tranning-item p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  opacity: 1 !important;
+}
+
+.box-tranning .box-tranning-middle .col-lg-6 .img-main-box:hover {
+  transform: scale(1.01);
+}
+
+.box-tranning .box-tranning-middle .col-lg-6 .img-main-box {
+  transition: transform 0.4s ease-in-out;
+}
+
+.box-tranning .box-tranning-middle .banner-under {
+  right: 12px;
+}
+
+/* ------------box-book---------------- */
+.box-book .box-book-top .category-list {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.box-book .box-book-top .category-list li {
+  background-color: #fff;
+  border: 0.8px solid #ddd;
+  border-radius: 5px;
+  color: #333;
+  padding: 5px 15px;
+  text-align: center;
+  display: inline-block;
+  /* Giúp chữ căn giữa */
+  white-space: nowrap;
+  /* Không xuống dòng */
+}
+
+.box-book .box-book-top .category-list>li>a {
+  color: rgb(51, 51, 51);
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.box-book .box-book-top .category-list li:hover {
+  background: #e9ffdf;
+}
+
+.box-book .box-book-top .category-list li:hover>a {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+  line-height: 21px;
+}
+
+.box-book .box-book-item .item-img {
+  margin: 30px auto;
+}
+
+.box-book .box-book-item .item-img img {
+  height: 200px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.box-book .box-book-item p {
+  color: black;
+  font-weight: 700;
+}
+
+.box-book .box-book-item .item-content-price p:first-child {
+  color: rgb(102, 102, 102);
+  font-weight: 400;
+}
+
+.box-book .box-book-item .item-content-price .sale {
+  color: rgb(102, 102, 102);
+  font-weight: 400;
+  position: relative;
+  top: -5px;
+  /* Đẩy chữ gạch ngang lên cao */
+  margin-right: 8px;
+  /* Tạo khoảng cách với giá mới */
+}
+
+.box-book .box-book-item .row .col-lg-12 .box-book-info .item {
+  background: #fff;
+  padding: 12px;
+  border-radius: 7px;
+  transition: 0.3s;
+
+}
+
+.box-book .box-book-item .row .col-lg-12 .box-book-info .item:hover {
+  transform: translateY(-15px);
+  /* Đẩy lên 3px */
+}
+
+
+/* ------------box-ranking---------------- */
+.box-ranking .row {
+  background-color: #fff;
+}
+
+.box-ranking .rank-subject {
+  margin: 20px 0px 16px;
+  padding: 10px;
+  background: #eeeeee;
+  color: black;
+  font-weight: 700;
+  line-height: 21px;
+  font-size: 14px;
+}
+
+.box-ranking .ranking-infomation img{
+  border-radius: 50%;
+  color: #333;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.box-ranking .ranking-infomation{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.box-ranking .ranking-infomation p{
+  display: flex;
+  align-items: end; /* Đảm bảo chữ nằm giữa theo chiều dọc */
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  color: #3dace5;
+}
+
+.box-ranking .ranking-infomation .point{
+  display: grid;
+  grid-template-columns: repeat(2, 50px); /* Chia đều hai cột */
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.box-ranking .ranking-infomation .gift{
+  width: 19px;
+  height: 19px;
+}

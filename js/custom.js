@@ -1,82 +1,69 @@
 $(document).ready(function () {
   //Main Slider
-  $(".main__slide").owlCarousel({
+  $(".main-slider").owlCarousel({
     loop: true,
     nav: false,
     items: 1,
     dots: false,
     autoplay: true,
     autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-  });
-
-  // Products box Slider
-  $(".product-box-lists").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    dots: false,
+    autoplayHoverPause: false,
     responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 4,
-      },
+      0: { items: 1 },
+      600: { items: 1 },
+      1000: { items: 1 },
     },
   });
 
-  // Testimonials Box Slider
-  $(".testimonials-box__slider").owlCarousel({
-    loop: true,
-    nav: true,
-    items: 1,
-    dots: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
+  //Box right slider
+  $(document).ready(function () {
+    $(".box-right").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: { items: 1 },
+        600: { items: 2 },
+        1000: { items: 2 },
+      },
+    });
   });
 
-  // News-Box
-  //News box Slider
-  $(".news-box__lists").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    dots: false,
-    responsive: {
-      0: {
-        items: 1,
+  $(document).ready(function () {
+    $(".banner-under").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: { items: 1 },
+        600: { items: 2 },
+        1000: { items: 4 },
       },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 3,
-      },
-    },
+    });
   });
 
-  // Brand Slider
-  $(".brand-box__lists").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    items:5,
-    dots: false,
-    responsive: {
-      0: {
-        items: 2,
+  $(document).ready(function () {
+    $(".box-book-info").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: { items: 1 },
+        600: { items: 2 },
+        1000: { items: 4 },
       },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 5,
-      },
-    },
+    });
   });
 });
