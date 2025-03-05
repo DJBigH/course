@@ -24,6 +24,7 @@ header {
 
 .header__hotel {
   margin-left: 30px;
+  margin-top: 2px;
 }
 
 .header__hotel span {
@@ -36,8 +37,14 @@ header {
 
 .header__cart {
   border-left: 1px solid #ddd;
-  text-align: center;
   border-right: 1px solid #ddd;
+  margin-top: 5px;
+  display: flex;
+  /* Dùng flexbox để kéo dài theo cha */
+  height: 100%;
+  /* Đảm bảo border kéo hết */
+  justify-content: center;
+  align-items: center;
 }
 
 .header__cart i {
@@ -97,6 +104,27 @@ nav {
 
 /* ------------Main-banner---------------- */
 
+.banner .main-slider .owl-nav .owl-next {
+  position: absolute;
+  top: 41%;
+  z-index: 100;
+  right: -37px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: url(/images/next.png) center center no-repeat;
+}
+
+.banner .main-slider .owl-nav .owl-prev {
+  position: absolute;
+  top: 41%;
+  z-index: 100;
+  left: -37px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: url(/images/prev.png) center center no-repeat;
+}
 
 /* ------------box-banner---------------- */
 
@@ -186,6 +214,12 @@ nav {
 
 .box-tranning .box-tranning-middle img {
   border-radius: 5px;
+  transition: 0.3s linear;
+}
+
+.box-tranning .banner-under img {
+  border-radius: 5px;
+  transition: 0.3s linear;
 }
 
 .box-tranning .box-tranning-middle .box-right .box-tranning-content .author img,
@@ -208,7 +242,7 @@ nav {
 
 .box-tranning .box-tranning-middle .box-right .box-tranning-content .author,
 .box-tranning .box-tranning-middle .banner-under .item-content .author {
-  padding: 10px 0;
+  padding: 10px 10px;
 }
 
 .box-tranning .box-tranning-middle .box-right p,
@@ -236,7 +270,7 @@ nav {
 
 .box-tranning .box-tranning-middle .col-lg-6 .box-tranning-item {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 10px;
   width: 650px;
   right: 0;
@@ -267,6 +301,60 @@ nav {
 
 .box-tranning .box-tranning-middle .banner-under {
   right: 12px;
+}
+
+.box-tranning .box-tranning-middle .box-right .owl-nav .owl-next {
+  position: absolute;
+  top: 41%;
+  z-index: 100;
+  right: -37px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: url(/images/next.png) center center no-repeat;
+}
+
+.box-tranning .box-tranning-middle .box-right .owl-nav .owl-prev {
+  position: absolute;
+  top: 41%;
+  z-index: 100;
+  left: -37px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: url(/images/prev.png) center center no-repeat;
+}
+
+.box-tranning .box-tranning-middle .banner-under .owl-nav .owl-next {
+  position: absolute;
+  top: 41%;
+  z-index: 100;
+  right: -37px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: url(/images/next.png) center center no-repeat;
+}
+
+.box-tranning .box-tranning-middle .banner-under .owl-nav .owl-prev {
+  position: absolute;
+  top: 41%;
+  z-index: 100;
+  left: -37px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: url(/images/prev.png) center center no-repeat;
+}
+
+.box-tranning .box-tranning-middle img:hover {
+  border-radius: 5px;
+  transform: scale(1.05);
+}
+
+.box-tranning .banner-under img:hover {
+  border-radius: 5px;
+  transform: scale(1.05);
 }
 
 /* ------------box-book---------------- */
@@ -309,14 +397,22 @@ nav {
 }
 
 .box-book .box-book-item .item-img {
-  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  /* Đặt chiều cao cố định cho khung ảnh */
+  overflow: hidden;
+  /* Ẩn phần dư thừa nếu có */
 }
 
 .box-book .box-book-item .item-img img {
-  height: 200px;
+  max-height: 200px;
+  /* Đảm bảo hình ảnh không bị méo */
+  width: auto;
   object-fit: contain;
-  width: 100%;
 }
+
 
 .box-book .box-book-item p {
   color: black;
@@ -352,6 +448,28 @@ nav {
 }
 
 
+.box-book .box-book-item .box-book-info .owl-nav .owl-next {
+  position: absolute;
+  top: 41%;
+  z-index: 100;
+  right: -38px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: url(/images/next.png) center center no-repeat;
+}
+
+.box-book .box-book-item .box-book-info .owl-nav .owl-prev {
+  position: absolute;
+  top: 41%;
+  z-index: 100;
+  left: -38px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: url(/images/prev.png) center center no-repeat;
+}
+
 /* ------------box-ranking---------------- */
 .box-ranking .row {
   background-color: #fff;
@@ -367,7 +485,7 @@ nav {
   font-size: 14px;
 }
 
-.box-ranking .ranking-infomation img{
+.box-ranking .ranking-infomation img {
   border-radius: 50%;
   color: #333;
   width: 42px;
@@ -375,7 +493,7 @@ nav {
   object-fit: contain;
 }
 
-.box-ranking .ranking-infomation{
+.box-ranking .ranking-infomation {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -383,24 +501,237 @@ nav {
   margin: 10px 0;
 }
 
-.box-ranking .ranking-infomation p{
+.box-ranking .ranking-infomation p {
   display: flex;
-  align-items: end; /* Đảm bảo chữ nằm giữa theo chiều dọc */
+  align-items: end;
+  /* Đảm bảo chữ nằm giữa theo chiều dọc */
   justify-content: space-around;
   margin: 0;
   padding: 0;
   color: #3dace5;
 }
 
-.box-ranking .ranking-infomation .point{
+.box-ranking .ranking-infomation .point {
   display: grid;
-  grid-template-columns: repeat(2, 50px); /* Chia đều hai cột */
+  grid-template-columns: repeat(2, 50px);
+  /* Chia đều hai cột */
   justify-content: center;
   gap: 10px;
   text-align: center;
 }
 
-.box-ranking .ranking-infomation .gift{
+.box-ranking .ranking-infomation .gift {
   width: 19px;
   height: 19px;
+}
+
+/* ------------news-share---------------- */
+.news-share {
+  display: flex;
+  align-items: stretch;
+  /* Cả 2 cột sẽ có cùng chiều cao */
+}
+
+
+.news-share .left .left-item {
+  display: flex;
+  padding: 10px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.news-share .left .left-item img {
+  width: 230px !important;
+  /* height: 67px !important; */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 7px;
+  border: 1px solid black;
+}
+
+.news-share .left .left-item p {
+  font-weight: 700;
+  line-height: 21px;
+  text-align: left;
+  margin: 0px 10px;
+  /* word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word; */
+}
+
+.news-share .left .left-item.link a {
+  color: rgb(0, 86, 179);
+}
+
+.news-share .left .left-item.link>a:hover {
+  color: #0005a5e6;
+}
+
+.news-share .left .row {
+  padding: 30px 30px;
+  background: #fff;
+  border-radius: 7px;
+  position: relative;
+  margin: 0 auto;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.news-share .right .item .share {
+  padding: 30px 30px;
+  background: #fff;
+  border-radius: 7px;
+  position: relative;
+  margin: 0 auto;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.news-share .right .share .share-content {
+  max-height: 85px;
+  overflow: auto;
+}
+
+
+.news-share .right .share .share-content p {
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: rgb(119, 119, 119);
+}
+
+.news-share .right .share .info {
+  display: flex;
+  gap: 5px;
+  margin: 10px 0;
+  padding: 30px 0px;
+}
+
+.news-share .right .share .info img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.news-share .right .share .info .achievements p {
+  margin-bottom: 5px;
+}
+
+.news-share .right .share .info .achievements .name {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.news-share .right .share .info .achievements .pass {
+  font-size: 12px;
+  color: #666666;
+}
+
+.news-share .right .owl-nav .owl-next {
+  position: absolute;
+  top: 41%;
+  z-index: 100;
+  left: 615px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: url(/images/next.png) center center no-repeat;
+}
+
+.news-share .right .owl-nav .owl-prev {
+  position: absolute;
+  top: 41%;
+  z-index: 100;
+  right: 615px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: url(/images/prev.png) center center no-repeat;
+}
+
+/* ------------Footer---------------- */
+
+.footer {
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.footer .footer-infomation ul {
+  list-style: disc;
+}
+
+.footer .footer-infomation ul li {
+  padding: 5px 0;
+}
+
+.footer .footer-infomation ul li a {
+  font-size: 15px;
+  line-height: 21px;
+  color: rgb(119, 119, 119);
+  font-weight: 400;
+}
+
+.footer .footer-social {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer .footer-social img {
+  width: 40px;
+  /* Đặt chiều rộng */
+  height: auto;
+  /* Chiều cao tự động theo tỷ lệ */
+}
+
+.footer .footer-social .img-sale {
+  width: 150px;
+}
+
+.footer .btn-face {
+  position: fixed;
+  right: 15px;
+  bottom: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 50px;
+  grid-gap: 10px;
+  z-index: 99;
+}
+
+.footer .btn-zalo {
+  position: fixed;
+  right: 20px;
+  bottom: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 50px;
+  grid-gap: 10px;
+  z-index: 99;
+}
+
+.footer .btn-phone {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 50px;
+  grid-gap: 10px;
+  z-index: 99;
 }
