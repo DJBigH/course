@@ -177,9 +177,9 @@ a {
   color: var(--link-color);
 }
 
-a:hover {
+/* a:hover {
   color: var(--primary-color);
-}
+} */
 
 ul,
 ol {
