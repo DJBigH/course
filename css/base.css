@@ -128,6 +128,8 @@ html {
   margin: 0;
   padding: 0;
   width: 100%;
+  overflow-x: hidden; /* Ẩn cuộn ngang */
+    max-width: 100%; /* Giới hạn chiều rộng tối đa */
 }
 
 body {
@@ -138,6 +140,8 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  overflow-x: hidden; /* Ẩn cuộn ngang */
+    max-width: 100%; /* Giới hạn chiều rộng tối đa */
 }
 
 h1,
@@ -271,4 +275,58 @@ img {
   cursor: pointer;
   z-index: 999999 !important;
   pointer-events: auto !important;
+}
+
+/* Điện thoại nhỏ */
+@media (max-width: 400px) {
+  .container{
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+/* Điện thoại vừa */
+@media (min-width: 401px) and (max-width: 576px) {
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Điện thoại lớn */
+@media (min-width: 577px) and (max-width: 767px) {
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Tablet nhỏ */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Tablet lớn */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container{
+    margin: 0 auto;
+  }
+}
+
+/* Laptop nhỏ */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .container{
+    margin: 0 auto;
+  }
+}
+
+/* Laptop lớn & Desktop */
+@media (min-width: 1440px) {
+    .container{
+      margin: 0 auto;
+      
+    }
 }
