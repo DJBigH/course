@@ -127,7 +127,6 @@ html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  width: 100%;
   overflow-x: hidden; /* Ẩn cuộn ngang */
     max-width: 100%; /* Giới hạn chiều rộng tối đa */
 }
@@ -139,7 +138,6 @@ body {
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
-  width: 100%;
   overflow-x: hidden; /* Ẩn cuộn ngang */
     max-width: 100%; /* Giới hạn chiều rộng tối đa */
 }
